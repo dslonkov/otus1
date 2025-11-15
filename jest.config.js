@@ -1,0 +1,14 @@
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  roots: ['<rootDir>'],
+  testMatch: ['**/*.test.ts'],
+  collectCoverageFrom: [
+    '*.ts',
+    '!*.test.ts',
+    '!*.config.ts'
+  ],
+  coverageDirectory: 'coverage',
+  verbose: true
+};
+
